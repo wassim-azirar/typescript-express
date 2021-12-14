@@ -13,7 +13,6 @@ const route = (method: string, path: string) => {
 
 const authorize = () => {
   return (target: object, propertyKey: string, descriptor: PropertyDescriptor) => {
-    console.log(process.env.API_KEY);
     const original = descriptor.value;
     descriptor.value = (...args: unknown[]) => {
       const req = args[0] as Request;

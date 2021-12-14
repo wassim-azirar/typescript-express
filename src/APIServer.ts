@@ -12,6 +12,9 @@ import * as http from "http";
 import lusca from "lusca";
 import morgan from "morgan";
 import responseTime from "response-time";
+import * as heroController from "./controllers/hero.controller";
+import * as homeController from "./controllers/home.controller";
+import { isAuthorized } from "./helpers/authenticationGuard";
 
 export default class APIServer {
   private _app: Express;
@@ -34,6 +37,9 @@ export default class APIServer {
 
     // configure middlewares
     this.configureMiddlewares();
+
+    // configure routes
+    this.configureRoutes();
   }
 
   public configureMiddlewares(): void {
@@ -71,6 +77,16 @@ export default class APIServer {
       );
 
       next();
+    });
+  }
+
+  public configureRoutes(): void {
+    this._app.get("/home", homeController.Index);
+    this._app.get("/heroes", isAuthorized, heroController.GetAll);
+    this._app.get("/heroes/:email", isAuthorized, async (request, response) => {
+      const email = request.params.email;
+      const hero = await heroController.GetByEmail(email);
+      response.json(hero);
     });
   }
 

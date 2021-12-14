@@ -50,8 +50,9 @@
   "scripts": {
     "prepare": "husky install",
     "build": "tsc",
-    "start": "npm run start:server",
-    "start:server": "tsc && node dist/app.js"
+    "start": "concurrently \"npm run start:server\" \"npm run start:backend\"",
+    "start:server": "tsc && node dist/app.js",
+    "start:backend": "json-server --watch db.json --routes routes.json --port 3001"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,6 @@
+{
+  "/heroes": "/heroes",
+  "/heroes/:email": "/heroes?email=:email",
+  "/orders": "/orders",
+  "/orders/:heroId": "/orders?heroId=:heroId"
+}
