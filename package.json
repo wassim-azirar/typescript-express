@@ -48,11 +48,12 @@
     "pretty-quick": "3.1.2"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick --pattern '**/src/**/*'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "pretty-quick --pattern '**/src/**/*'"
     }
   }
 }
