@@ -14,6 +14,7 @@ import morgan from "morgan";
 import responseTime from "response-time";
 import * as heroController from "./controllers/hero.controller";
 import * as homeController from "./controllers/home.controller";
+import * as petController from "./controllers/pet.controller";
 import { isAuthorized } from "./helpers/authenticationGuard";
 
 export default class APIServer {
@@ -88,6 +89,7 @@ export default class APIServer {
       const hero = await heroController.GetByEmail(email);
       response.json(hero);
     });
+    this._app.get("/pets/:id", isAuthorized, petController.GetById);
   }
 
   public start(): void {
