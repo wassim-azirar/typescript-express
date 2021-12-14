@@ -49,7 +49,9 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "pretty-quick": "pretty-quick --pattern '**/src/**/*'"
+    "build": "tsc",
+    "start": "npm run start:server",
+    "start:server": "tsc && node dist/app.js"
   },
   "husky": {
     "hooks": {
