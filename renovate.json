@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "description": "Do not pin package.json deps",
+      "matchFiles": ["package.json"],
+      "rangeStrategy": "replace"
+    }
+  ]
+}
