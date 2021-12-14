@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "IronGeek.vscode-env",
+    "miguelsolorio.fluent-icons",
+    "pmneo.tsimporter",
+    "redhat.vscode-yaml",
+    "rvest.vs-code-prettier-eslint",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "wraith13.bracket-lens"
+  ]
+}

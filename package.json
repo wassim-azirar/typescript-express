@@ -1,12 +1,12 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "Advanced TypeScript",
+  "description": "TypeScript with Express.js",
   "author": "Wassim AZIRAR",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wassim-azirar/advanced-typescript"
+    "url": "https://github.com/wassim-azirar/typescript-express"
   },
   "dependencies": {
     "axios": "^0.24.0",
