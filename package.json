@@ -18,7 +18,7 @@
     "express": "4.17.1",
     "express-flash": "0.0.2",
     "express-rate-limit": "5.5.1",
-    "helmet": "4.6.0",
+    "helmet": "5.1.0",
     "hpp": "0.2.3",
     "json-server": "0.17.0",
     "lusca": "1.7.0",
