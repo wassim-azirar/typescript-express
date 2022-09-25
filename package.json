@@ -9,7 +9,7 @@
     "url": "https://github.com/wassim-azirar/typescript-express"
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^0.27.0",
     "body-parser": "1.19.1",
     "compression": "1.7.4",
     "cookie-parser": "1.4.6",
