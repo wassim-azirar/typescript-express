@@ -35,7 +35,7 @@
     "@types/express-flash": "0.0.2",
     "@types/lusca": "1.7.1",
     "@types/morgan": "1.9.3",
-    "@types/node": "16.11.12",
+    "@types/node": "16.11.60",
     "@typescript-eslint/eslint-plugin": "5.7.0",
     "@typescript-eslint/parser": "5.7.0",
     "concurrently": "6.4.0",
